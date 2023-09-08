@@ -8,7 +8,9 @@ const NewArrivals = () => {
 
   useEffect(() => {
     const fetchNewArrivalItems = async () => {
-      const { data } = await axios.get('/api/product/newArrivals')
+      const { data } = await axios.get(
+        'https://clothin-line.onrender.com/api/product/newArrivals'
+      )
 
       setNewArrivalItems(data.data)
     }

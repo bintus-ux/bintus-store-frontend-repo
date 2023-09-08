@@ -1,6 +1,5 @@
 {
   "name": "react-task-tracker",
-  "proxy": "https://clothin-line.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

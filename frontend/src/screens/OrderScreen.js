@@ -81,7 +81,11 @@ const OrderScreen = () => {
           email_address: user.email,
         }
         axios
-          .put(`/api/orders/${id}/pay`, body, config)
+          .put(
+            `https://clothin-line.onrender.com/api/orders/${id}/pay`,
+            body,
+            config
+          )
           .then((res) => {
             window.location.reload()
           })
